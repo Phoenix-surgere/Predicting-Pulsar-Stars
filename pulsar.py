@@ -20,4 +20,4 @@ pulsars = pd.read_csv(zf.open('pulsar_stars.csv'))
 
 print(pulsars.info())
 print(pulsars.columns)
-print(pulsars.describe())
+print(pulsars.describe(include='all').T.to_string() )
